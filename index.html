@@ -1,592 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anusha Subramanian - Data Journalist</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <style>
-        :root {
-            --primary: #dfa95e;
-            --secondary: #A43668;
-            --accent: #4d5431;
-            --background: #ffffff;
-            --text: #362d2d;
-        }
-
-        .hero {
-            background-color: var(--primary) !important;
-            padding: 4rem 0 !important;
-        }
-
-        .hero-text {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-
-        .hero .title {
-            font-size: 60px !important;
-            margin-bottom: 2rem !important;
-            font-weight: 700 !important;
-            color: var(--text) !important;
-        }
-
-        .hero .subtitle {
-            font-size: 1.8rem !important;
-            margin-bottom: 2rem !important;
-            letter-spacing: 2px;
-            color: var(--text) !important;
-        }
-
-        .navbar {
-            background-color: var(--secondary) !important;
-        }
-
-        .title {
-         color: var(--text) !important;
-        }
-
-        .project-card {
-            height: 100%;
-            transition: transform 0.2s;
-        }
-
-        .project-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .section {
-            padding: 3rem 1.5rem;
-        }
-
-        .profile-image {
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-            max-width: 400px;
-            width: 100%;
-            height: auto;
-            margin: 0 auto;
-            display: block;
-        }
-
-        .bio-text {
-            max-width: 800px;
-            margin: 0 auto 2rem auto;
-            line-height: 1.8;
-            font-size: 1.1rem;
-        }
-
-        .tags {
-            justify-content: left;
-            
-        }
-
-        .tag.is-medium {
-            background-color: var(--secondary);
-            color: white;
-            font-weight: 500;
-            margin: 0.3rem;
-        }
-
-        .tag.is-custom {
-            background-color: var(--secondary);
-            color: white;
-            
-        }
-
-        .card-content .is-italic {
-            font-size: 0.9rem;
-            margin-top: 0.5rem;
-        }
-
-        #articles .project-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-
-        .navbar-item {
-            color: var(--background) !important;
-        }
-
-        .navbar-item:hover {
-            color: var(--accent) !important;
-        }
-        
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anusha Subramanian Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar is-light" role="navigation" aria-label="main navigation">
-        <div class="container">
-            <div class="navbar-brand">
-                <a class="navbar-item" href="#home">
-                    <strong>AS</strong>
-                </a>
-            </div>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="section-container header-flex">
+      <div class="logo">AS</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#work">Featured</a></li>
+          <li><a href="#musings">Musings</a></li>
+          <li><a href="#photography">Photography</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-            <div class="navbar-menu">
-                <div class="navbar-end">
-                    <a class="navbar-item" href="#projects">Projects</a>
-                    <a class="navbar-item" href="#articles">Articles</a>
-                    <a class="navbar-item" href="#musings">Musings</a>
-                    <a class="navbar-item" href="#contact">Contact</a>
-                </div>
-            </div>
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Anusha Subramanian</h1>
+      <h2>Data Journalist | Author | Foodie</h2>
+      <p>I'm a data journalist interested in reporting on healthcare, higher education and the South Asian diaspora, especially at 
+        the intersection of food and culture. I was a molecular biologist in a past career and a poet in a past life.</p>
+    </div>
+  </section>
+
+  <!-- Featured Works -->
+  <section class="featured" id="work">
+    <div class="section-container">
+      <h2>Featured Works</h2>
+      <div class="featured-grid">
+
+        <!-- NYC Streetnames-->
+        <div class="featured-card">
+          <img src="cover images/nyc_streetnames.png" alt="Work 1">
+          <div class="card-content">
+            <a href="https://anusha0712.github.io/nyc-streetnames/" target="blank">
+              <h3>The Women In Male Dominated Streets</h3>
+            </a>
+            <a href="https://github.com/anusha0712/nyc-streetnames" target="blank"> April 2025 | Methodology
+            </a>
+            <p>Data from the NYC Department of Records shows the gender disparity in our urban landscape with only 22% of honorarily
+            named street honoring women.</p>
+          </div>
         </div>
-    </nav>
 
-    <!-- About Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="columns is-vcentered">
-                <div class="column is-5">
-                    <figure class="image">
-                        <img src="cover images/profile.jpg" alt="Anusha Subramanian" class="profile-image">
-                    </figure>
-                </div>
-                <div class="column is-7">
-                    <div class="hero-text">
-                        <h1 class="title">
-                            Anusha Subramanian
-                        </h1>
-                        <h2 class="subtitle">
-                            Data Journalist | Author | Foodie
-                        </h2>
-                        <p class="bio-text">
-                            I'm a data journalist passionate about Public Health, South Asian culture and Food narratives. 
-                            A molecular biologist in a past career and a poet in a past life.
-                        </p>
-                        <div class="tags">
-                            <span class="tag is-medium">Python</span>
-                            <span class="tag is-medium">R</span>
-                            <span class="tag is-medium">SQL</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <!-- Harlem Cafeteria -->
+        <div class="featured-card">
+          <img src="cover images/harlem_violations.png" alt="Work 2">
+          <div class="card-content">
+            <a href="https://columbianewsservice.com/2024/11/18/health-department-cites-harlem-school-cafeterias-for-critical-violations/" target="blank">
+              <h3>Health Department Cites Harlem School Cafeterias for "Critical" Violations</h3>
+            </a>
+            <a href="#" target="blank"> November 2024
+            </a>
+            <p>City inspectors find unsanitary cafeteria conditions in almost one-third of
+            Harlem public school buildings. Schools aren't required to tell parents.</p>
+          </div>
         </div>
-    </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-        <div class="container">
-            <h2 class="title is-2 has-text-centered mb-6">Projects</h2>
-            <div class="columns is-multiline">
-
-                <!-- NYC Streetnames-->
-                <div class="column is-4">
-                    <div class="card project-card">
-                        <div class="card-image">
-                            <figure class="image is-16by9">
-                                <img src="cover images/nyc_streetnames.png" alt="nyc_streetnames">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <h3 class="title is-4">The Women In Male Dominated Streets</h3>
-                            <p class="content">
-                                Data from the NYC Department of Records shows the gender disparity in our urban landscape with only 22% of honorarily named street honoring women.
-                            </p>
-                            <div class="tags">
-                                <span class="tag is-custom">Python</span>
-                                <span class="tag is-custom">Mapping</span>
-                                <span class="tag is-custom">Illustrator</span>
-                                <span class="tag is-custom">Data Visualization</span>
-                                <span class="tag is-custom">Responsive Design</span>
-                            </div>
-                            <p class="has-text-grey">April 2025</p>
-                        </div>
-                        <footer class="card-footer">
-                            <a href="https://anusha0712.github.io/nyc-streetnames/" class="card-footer-item"
-                                target="_blank">View
-                                Project
-                                →</a>
-                            <a href="https://github.com/anusha0712/nyc-streetnames" class="card-footer-item"
-                                target="_blank">View
-                                Code
-                                →</a>
-                        </footer>
-                    </div>
-                </div>
-
-                <!-- Campus Deplatforming-->
-                <div class="column is-4">
-                    <div class="card project-card">
-                        <div class="card-image">
-                            <figure class="image is-16by9">
-                                <img src="cover images/deplatforming.jpg" alt="deplatforming">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <h3 class="title is-4">The Quiet Crisis of Academic Deplatforming</h3>
-                            <p class="content">
-                                Deplatforming, or censorship by internal or external sources of the accessibility to public events on campus, is
-                                alarmingly on the rise.
-                            </p>
-                            <div class="tags">
-                                <span class="tag is-custom">Python</span>
-                                <span class="tag is-custom">Scraping</span>
-                                <span class="tag is-custom">Database Creation</span>
-                                <span class="tag is-custom">Responsive Design</span>
-                            </div>
-                            <p class="has-text-grey">May 2025</p>
-                        </div>
-                        <footer class="card-footer">
-                            <a href="https://anusha0712.github.io/deplatforming/" class="card-footer-item" target="_blank">View
-                                Project
-                                →</a>
-                            <a href="https://github.com/anusha0712/deplatforming" class="card-footer-item" target="_blank">View
-                                Code
-                                →</a>
-                        </footer>
-                    </div>
-                </div>
-
-                <!-- Drake-Kendrick  -->
-                <div class="column is-4">
-                    <div class="card project-card">
-                        <div class="card-image">
-                            <figure class="image is-16by9">
-                                <img src="cover images/drake_kendrick.jpg" alt="Concert arena">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <h3 class="title is-4">Drake vs Kendrick: What Hurts The Male Ego?</h3>
-                            <p class="content">
-                                A data-driven analysis of contemporary hip-hop's most iconic rivalry, examining over 500 insults in the
-                                feudal discography.
-                            </p>
-                            <div class="tags">
-                                <span class="tag is-custom">Python</span>
-                                <span class="tag is-custom">R</span>
-                                <span class="tag is-custom">Illustrator</span>
-                                <span class="tag is-custom">Data Visualization</span>
-                                <span class="tag is-custom">Database Creation</span>
-                            </div>
-                            <p class="has-text-grey">March 2025</p>
-                        </div>
-                        <footer class="card-footer">
-                            <a href="https://anusha0712.github.io/drake-kendrick-feud/" class="card-footer-item" target="_blank">View
-                                Project
-                                →</a>
-                            <a href="https://github.com/anusha0712/drake-kendrick-feud" class="card-footer-item" target="_blank">View
-                                Code
-                                →</a>
-                        </footer>
-                    </div>
-                </div>
-
-
-                <!-- Airline Disability Complaints-->
-                <div class="column is-4">
-                    <div class="card project-card">
-                        <div class="card-image">
-                            <figure class="image is-16by9">
-                                <img src="cover images/airline.jpg" alt="airport departure board">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <h3 class="title is-4">Left Behind: The State of Airline Accessibility</h3>
-                            <p class="content">
-                                Analysing the disability related complaints lodged against U.S commercial airlines, over the past five years.
-                            </p>
-                            <div class="tags">
-                                <span class="tag is-custom">Python</span>
-                                <span class="tag is-custom">R</span>
-                                <span class="tag is-custom">Illustrator</span>
-                                <span class="tag is-custom">Data Visualization</span>
-                                <span class="tag is-custom">Responsive Design</span>
-                            </div>
-                            <p class="has-text-grey">March 2025</p>
-                        </div>
-                        <footer class="card-footer">
-                            <a href="https://anusha0712.github.io/airline-disability-complaints/" class="card-footer-item" target="_blank">View
-                                Project
-                                →</a>
-                            <a href="https://github.com/anusha0712/airline-disability-complaints" class="card-footer-item" target="_blank">View
-                                Code
-                                →</a>
-                        </footer>
-                    </div>
-                </div>
-
-                
-
-                <!-- Banned Books  -->
-                <div class="column is-4">
-                    <div class="card project-card">
-                        <div class="card-image">
-                            <figure class="image is-16by9">
-                                <img src="cover images/banned_books.jpg" alt="Classic Books">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <h3 class="title is-4">We Stopped Burning Books - Now We Just Ban Them</h3>
-                            <p class="content">
-                                Visualizing the mass censorship of books in American schools.
-                            </p>
-                            <div class="tags">
-                                <span class="tag is-custom">Python</span>
-                                <span class="tag is-custom">R</span>
-                                <span class="tag is-custom">Illustrator</span>
-                                <span class="tag is-custom">Data Visualization</span>
-                            </div>
-                            <p class="has-text-grey">February 2025</p>
-                        </div>
-                        <footer class="card-footer">
-                            <a href="https://anusha0712.github.io/banned-books/" class="card-footer-item" target="_blank">View Project →</a>
-                            <a href="https://github.com/anusha0712/banned-books" class="card-footer-item" target="_blank">View Code →</a>
-                        </footer>
-                    </div>
-                </div>
-
-                <!-- Project 1 -->
-                <div class="column is-4">
-                    <div class="card project-card">
-                        <div class="card-image">
-                            <figure class="image is-16by9">
-                                <img src="cover images/war_and_peas.JPG" alt="Breakfast Food">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <h3 class="title is-4">War & Peas</h3>
-                            <p class="content">
-                                A prototype for a classifer that can take multiple menu items as input and categorize whether the food is vegetarian or contains meat, simultaneously providing a veggie score.
-                            </p>
-                            <div class="tags">
-                                <span class="tag is-custom">AI</span>
-                                <span class="tag is-custom">Python</span>
-                            </div>
-                            <p class="has-text-grey">December 2024</p>
-                        </div>
-                        <footer class="card-footer">
-                            <a href="https://anusha0712.github.io/vegetarian_classifier/" class="card-footer-item" target="_blank">View Project →</a>
-                            <a href="https://github.com/anusha0712/vegetarian_classifier" class="card-footer-item" target="_blank">View Code →</a>
-                        </footer>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="column is-4">
-                    <div class="card project-card">
-                        <div class="card-image">
-                            <figure class="image is-16by9">
-                                <img src="cover images/network.png" alt="Network of Magic">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <h3 class="title is-4">Network of Magic in Harry Potter</h3>
-                            <p class="content">
-                                Analyzed the network of magic within the Harry Potter series 
-                                using Social Network Analysis and developed an interactive 
-                                visualization that depicts character-spell relationships.
-                            </p>
-                            <div class="tags">
-                                <span class="tag is-custom">Python</span>
-                                <span class="tag is-custom">Social Network Analysis</span>
-                            </div>
-                            <p class="has-text-grey">June 2020</p>
-                        </div>
-                        <footer class="card-footer">
-                            <a href="HP/Harry_Potter_Project.html" class="card-footer-item" target="_blank">View Project →</a>
-                            <a href="HP/hp_viz.html" class="card-footer-item" target="_blank">View Visualization →</a>
-                        </footer>
-                    </div>
-                </div>
-
-                <!-- Project 4 -->
-                <div class="column is-4">
-                    <div class="card project-card">
-                        <div class="card-image">
-                            <figure class="image is-16by9">
-                                <img src="cover images/sex_ed.png" alt="Sexual Education in India">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <h3 class="title is-4">Youth Perception of Sex-Ed in India</h3>
-                            <p class="content">
-                                What do the youth of India feel about the need for formal sexual education in classrooms? I analyse the results of a survey I conducted in collaboration with Untaboo, an Indian non-profit, during the 'Bois Lockerroom' harrassment scandal in Delhi schools. 
-                            </p>
-                            <div class="tags">
-                                <span class="tag is-custom">Python</span>
-                                <span class="tag is-custom">Text Analysis</span>
-                            </div>
-                            <p class="has-text-grey">June 2020</p>
-                        </div>
-                        <footer class="card-footer">
-                            <a href="SexEd/Education Survey.html" class="card-footer-item" target="_blank">View Project →</a>
-                            <a href="SexEd/ Subramanian_Assignment4_2020-7-2.pdf" class="card-footer-item" target="_blank">View Poster →</a>
-                        </footer>
-                    </div>
-                </div>
-            </div>
+        <!-- Campus Deplatforming-->
+        <div class="featured-card">
+          <img src="cover images/deplatforming.jpg" alt="Work 3">
+          <div class="card-content">
+            <a href="https://anusha0712.github.io/deplatforming/" target="blank">
+              <h3>The Quiet Crisis of Academic Deplatforming</h3>
+            </a>
+            <a href="https://github.com/anusha0712/deplatforming" target="blank"> May 2025 | Methodology
+            </a>
+            <p>Deplatforming, or censorship by internal or external sources of the accessibility to public events on campus, is
+            alarmingly on the rise.</p>
+          </div>
         </div>
-    </section>
 
-    <!-- Articles Section -->
-    <section id="articles" class="section">
-        <div class="container">
-            <h2 class="title is-2 has-text-centered mb-6">Published Articles</h2>
-            <div class="columns is-multiline">
-                <!-- Article 1 -->
-                <div class="column is-4">
-                    <div class="card project-card">
-                        <div class="card-image">
-                            <figure class="image is-16by9">
-                                <img src="cover images/harlem_violations.png" alt="Harlem School Cafeteria">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <h3 class="title is-4">Health Department Cites Harlem School Cafeterias for "Critical" Violations</h3>
-                            <p class="content">
-                                City inspectors find unsanitary cafeteria conditions in almost one-third of Harlem public school buildings. Schools aren't required to tell parents.
-                            </p>
-                            <div class="tags">
-                                <span class="tag is-custom">Healthcare</span>
-                                <span class="tag is-custom">Education</span>
-                                <span class="tag is-custom">New York City</span>
-                            </div>
-                            <p class="has-text-grey">Published: November 2024</p>
-                            <p class="has-text-grey is-italic">Published in: Columbia News Service</p>
-                        </div>
-                        <footer class="card-footer">
-                            <a href="https://columbianewsservice.com/2024/11/18/health-department-cites-harlem-school-cafeterias-for-critical-violations/" class="card-footer-item" target="_blank">Read Article →</a>
-                        </footer>
-                    </div>
-                </div>
-
-                <!-- Article 2 -->
-                <div class="column is-4">
-                    <div class="card project-card">
-                        <div class="card-image">
-                            <figure class="image is-16by9">
-                                <img src="cover images/aed.jpg" alt="AED">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <h3 class="title is-4">Can Better Access to Defibrillators Combat Rising EMS Response Times in Harlem?</h3>
-                            <p class="content">
-                                As slower responses lead to increased cardiac deaths, advocates urge wider distribution of life-saving devices and educational campaigns to encourage their use.
-                            </p>
-                            <div class="tags">
-                                <span class="tag is-custom">Healthcare</span>
-                                <span class="tag is-custom">New York City</span>
-                            </div>
-                            <p class="has-text-grey">Published: November 2024</p>
-                            <p class="has-text-grey is-italic">Published in: Columbia News Service</p>
-                        </div>
-                        <footer class="card-footer">
-                            <a href="https://columbianewsservice.com/2024/11/11/can-better-access-to-public-defibrillators-combat-rising-ems-response-times-in-harlem/" class="card-footer-item" target="_blank">Read Article →</a>
-                        </footer>
-                    </div>
-                </div>
-
-                <!-- Article 3 -->
-                <div class="column is-4">
-                    <div class="card project-card">
-                        <div class="card-image">
-                            <figure class="image is-16by9">
-                                <img src="cover images/edi.png" alt="EDI">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <h3 class="title is-4">CB 10 Wants to Use New Online Platform to Bridge Gap Between Harlem Residents and Developers</h3>
-                            <p class="content">
-                                The land use committee advocates for an innovative project to inform developers of community needs.
-                            </p>
-                            <div class="tags">
-                                <span class="tag is-custom">Community Board</span>
-                                <span class="tag is-custom">Land Use</span>
-                                <span class="tag is-custom">New York City</span>
-                            </div>
-                            <p class="has-text-grey">Published: September 2024</p>
-                            <p class="has-text-grey is-italic">Published in: The Uptowner</p>
-                        </div>
-                        <footer class="card-footer">
-                            <a href="http://theuptowner.org/cb-10-wants-to-use-new-online-platform-to-bridge-gap-between-harlem-residents-and-developers/" class="card-footer-item" target="_blank">Read Article →</a>
-                        </footer>
-                    </div>
-                </div>
-            </div>
+        <!-- Drake-Kendrick  -->
+        <div class="featured-card">
+          <img src="cover images/drake_kendrick.jpg" alt="Work 4">
+          <div class="card-content">
+            <a href="https://anusha0712.github.io/drake-kendrick-feud/" target="blank">
+              <h3>Drake vs Kendrick: What Hurts The Male Ego?</h3>
+            </a>
+            <a href="https://github.com/anusha0712/drake-kendrick-feud" target="blank"> March 2025 | Methodology
+            </a>
+            <p>A data-driven analysis of contemporary hip-hop's most iconic rivalry, examining over 500 insults in the
+            feudal discography.</p>
+          </div>
         </div>
-    </section>
 
-    <!-- Musings Section -->
-    <section id="musings" class="section">
-        <div class="container">
-            <h2 class="title is-2 has-text-centered mb-6">Musings</h2>
-            <div class="columns is-multiline">
-
-                <!-- Musing 1 -->
-                <div class="column is-4">
-                    <div class="card project-card">
-                        <div class="card-image">
-                            <figure class="image is-16by9">
-                                <img src="cover images/pancake.png" alt="Tiya San Francisco">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <h3 class="title is-4">No, I Don’t Want a Sourdough Pancake, But I Will Take a Dosa</h3>
-                            <p class="content">
-                                The subtleties of writing respectfully about non-white cuisines
-                            </p>
-                            <p class="has-text-grey is-italic has-text-right">12.2024</p>
-                        </div>
-                        <footer class="card-footer">
-                            <a href="https://bonetopick.substack.com/p/no-i-dont-want-a-sourdough-pancake" class="card-footer-item" target="_blank">Read Substack →</a>
-                        </footer>
-                    </div>
-                </div>
-
-                <!-- Musing 2 -->
-                <div class="column is-4">
-                    <div class="card project-card">
-                        <div class="card-image">
-                            <figure class="image is-16by9">
-                                <img src="cover images/nola.png" alt="Tiya San Francisco">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <h3 class="title is-4">New Orleans through a Montage of Unrelated Art</h3>
-                            <p class="content">
-                                Homage to a land of stories
-                            </p>
-                            <p class="has-text-grey is-italic has-text-right">06.2020</p>
-                        </div>
-                        <footer class="card-footer">
-                            <a href="https://medium.com/illumination/new-orleans-through-a-montage-of-unrelated-art-d26a0aaf03b7" class="card-footer-item" target="_blank">Read Medium →</a>
-                        </footer>
-                    </div>
-                </div>
-
-                
-
-                
-            </div>
+        <!-- AED response  -->
+        <div class="featured-card">
+          <img src="cover images/aed.jpg" alt="Work 5">
+          <div class="card-content">
+            <a href="https://columbianewsservice.com/2024/11/11/can-better-access-to-public-defibrillators-combat-rising-ems-response-times-in-harlem/" target="blank">
+              <h3>Can Better Access to Defibrillators Combat Rising EMS Response Times in Harlem?</h3>
+            </a>
+            <a href="#" target="blank"> November 2024
+            </a>
+            <p>As slower responses lead to increased cardiac deaths, advocates
+            urge wider distribution of life-saving devices and educational campaigns to encourage their use.</p>
+          </div>
         </div>
-    </section>
 
-    <!-- Contact Section -->
-    <footer id="contact" class="footer">
-        <div class="content has-text-centered">
-            <h2 class="title is-3">Get in Touch</h2>
-            <div class="buttons is-centered">
-                <a href="mailto:as7500@columbia.edu" class="button is-light" target="_blank">
-                    <span class="icon"><i class="fas fa-envelope"></i></span>
-                </a>
-                <a href="https://twitter.com/asubramanian99" class="button is-light" target="_blank">
-                    <span class="icon"><i class="fab fa-twitter"></i></span>
-                </a>
-                <a href="https://github.com/anusha0712" class="button is-light" target="_blank">
-                    <span class="icon"><i class="fab fa-github"></i></span>
-                </a>
-                <a href="https://linkedin.com/in/anushasubramanian99" class="button is-light" target="_blank">
-                    <span class="icon"><i class="fab fa-linkedin"></i></span>
-                </a>
-            </div>
+        <!-- Banned Books  -->
+        <div class="featured-card">
+          <img src="cover images/banned_books.jpg" alt="Work 6">
+          <div class="card-content">
+            <a href="https://anusha0712.github.io/banned-books/" target="blank">
+              <h3>We Stopped Burning Books - Now We Just Ban Them</h3>
+            </a>
+            <a href="https://github.com/anusha0712/banned-books" target="blank"> February 2025 | Methodology
+            </a>
+            <p>Visualizing the mass censorship of books in American schools.</p>
+          </div>
         </div>
-    </footer>
+
+        <!-- Airline Disability Complaints-->
+        <div class="featured-card">
+          <img src="cover images/airline.jpg" alt="Work 7">
+          <div class="card-content">
+            <a href="https://anusha0712.github.io/airline-disability-complaints/" target="blank">
+              <h3>Left Behind: The State of Airline Accessibility</h3>
+            </a>
+            <a href="https://github.com/anusha0712/airline-disability-complaints" target="blank"> March 2025 | Methodology
+            </a>
+            <p>Analysing the disability related complaints lodged against U.S commercial airlines, over the past five years.</p>
+          </div>
+        </div>
+        
+        <!-- War and Peas  -->
+        <div class="featured-card">
+          <img src="cover images/war_and_peas.JPG" alt="Work 8">
+          <div class="card-content">
+            <a href="https://anusha0712.github.io/vegetarian_classifier/" target="blank">
+              <h3>War & Peas</h3>
+            </a>
+            <a href="#" target="blank"> December 2024
+            </a>
+            <p>A prototype for a classifer that can take multiple menu items as input and
+            categorize whether the food is vegetarian or contains meat, simultaneously
+            providing a veggie score.</p>
+          </div>
+        </div>
+
+        <!-- Network of Magic In HP  -->
+        <div class="featured-card">
+          <img src="cover images/network.png" alt="Work 9">
+          <div class="card-content">
+            <a href="HP/hp_viz.html" target="blank">
+              <h3>Network of Magic in Harry Potter</h3>
+            </a>
+            <a href="HP/Harry_Potter_Project.html" target="blank"> June 2020 | Methodology
+            </a>
+            <p>Analyzed the network of magic within the Harry Potter series
+            using Social Network Analysis and developed an interactive
+            visualization that depicts character-spell relationships.</p>
+          </div>
+        </div>
+
+        <!-- Sex-Ed  -->
+        <div class="featured-card">
+          <img src="cover images/sex_ed.png" alt="Work 10">
+          <div class="card-content">
+            <a href="SexEd/Education Survey.html" target="blank">
+              <h3>Youth Perception of Sex-Ed in India</h3>
+            </a>
+            <a href="SexEd/ Subramanian_Assignment4_2020-7-2.pdf" target="blank"> June 2020 | See Poster
+            </a>
+            <p>What do the youth of India feel about the need for formal sexual
+            education in classrooms? I analyse the results of a survey I conducted in
+            collaboration with Untaboo, an Indian non-profit, during the 'Bois Lockerroom'
+            harrassment scandal in Delhi schools.</p>
+          </div>
+        </div>
+
+        <!-- CB 10  -->
+        <div class="featured-card">
+          <img src="cover images/edi.png" alt="Work 11">
+          <div class="card-content">
+            <a href="http://theuptowner.org/cb-10-wants-to-use-new-online-platform-to-bridge-gap-between-harlem-residents-and-developers/" target="blank">
+              <h3>CB 10 Wants to Use New Online Platform to Bridge Gap Between Harlem Residents and Developers</h3>
+            </a>
+            <a href="#" target="blank"> September 2024
+            </a>
+            <p>The land use committee advocates for an innovative project to inform developers of community needs.</p>
+          </div>
+        </div>
+
+        <!-- Add more cards as needed -->
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Musings Section -->
+  <section class="musings">
+    <div class="section-container">
+      <h2>Musings</h2>
+      <div class="featured-grid">
+
+        <!-- Bone to Pick -->
+        <div class="featured-card">
+          <img src="cover images/pancake.png" alt="Substack">
+          <div class="card-content">
+            <a href="https://bonetopick.substack.com/p/no-i-dont-want-a-sourdough-pancake"><h3>No, I Don’t Want a Sourdough Pancake, But I Will Take a Dosa</h3>
+            </a>
+            <a href="https://bonetopick.substack.com/" target="blank"> December 2024 | Substack
+            </a>
+            <p>The subtleties of writing respectfully about non-white cuisines</p>
+          </div>
+        </div>
+
+        <!-- NOLA -->
+        <div class="featured-card">
+          <img src="cover images/nola.png" alt="Substack">
+          <div class="card-content">
+            <a href="https://medium.com/illumination/new-orleans-through-a-montage-of-unrelated-art-d26a0aaf03b7">
+              <h3>New Orleans through a Montage of Unrelated Art</h3>
+            </a>
+            <a href="https://medium.com/@anushasubramanian99" target="blank"> June 2020 | Medium
+            </a>
+            <p>Homage to a land of stories</p>
+          </div>
+        </div>
+
+        <!-- Add more musings as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo Carousel -->
+  <section class="carousel-section">
+    <div class="section-container">
+      <h2>Photography</h2>
+      <div class="carousel-window">
+        <div class="carousel-track">
+          <img src="carousel/1.JPEG" alt="Photo 1" class="carousel-slide vertical">
+          <img src="carousel/2.JPG" alt="Photo 2" class="carousel-slide vertical">
+          <img src="carousel/3.JPEG" alt="Photo 3" class="carousel-slide vertical">
+          <img src="carousel/4.JPEG" alt="Photo 4" class="carousel-slide vertical">
+          <img src="carousel/14.jpg" alt="Photo 14" class="carousel-slide vertical">
+          <img src="carousel/5.JPG" alt="Photo 5" class="carousel-slide vertical">
+          <img src="carousel/11.JPG" alt="Photo 11" class="carousel-slide vertical">
+          <img src="carousel/6.JPEG" alt="Photo 6" class="carousel-slide vertical">
+          <img src="carousel/7.jpg" alt="Photo 7" class="carousel-slide vertical">
+          <img src="carousel/8.JPG" alt="Photo 8" class="carousel-slide vertical">
+          <img src="carousel/9.jpg" alt="Photo 9" class="carousel-slide vertical">
+          <img src="carousel/10.JPEG" alt="Photo 10" class="carousel-slide vertical">
+          <img src="carousel/12.jpg" alt="Photo 12" class="carousel-slide horizontal">
+          <img src="carousel/13.jpg" alt="Photo 13" class="carousel-slide vertical">
+          <img src="carousel/15.JPG" alt="Photo 15" class="carousel-slide vertical">
+          <img src="carousel/16.JPG" alt="Photo 16" class="carousel-slide horizontal">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me -->
+  <section class="about-section" id="about">
+    <div class="section-container">
+      <h2>About Me</h2>
+      <div class="about-flex">
+        <div class="about-photo">
+          <img src="cover images/profile.jpg" alt="Your Photo" class="round-photo">
+        </div>
+        <div class="about-blurb">
+          <p>I graduate from the M.S Data Journalism program at Columbia Journalism School in August 2025. I enjoy untangling stories
+          hidden in data and learning tools and skills to visually represent complicated narratives. Previously I’ve written for The Berkeley Scientific Journal, The Daily Californian and Indian news outlets such as DNA,
+          Mint and Times of India.</p>
+          
+          <p>Before journalism, I graduated from UC Berkeley with a degree in Molecular & Cellular Biology (Genetics) and Data
+          Science. Over the course of 6 years, I’ve researched mating processes in yeast, virulence in Listeria and built
+          computational pipelines to analyze single-cell genomic data</p>
+          
+          <p><strong>Me After 5pm:</strong> At great peril to my bank account, I’m an extreme foodie. Currently on a mission to calculate the hassle-to-quality
+          ratio of the hardest restaurant reservations in NYC. My life would fall apart without my
+          to-do list and I’m infamous for my ridiculously rigorous iced coffee making process.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact-section" id="contact">
+    <div class="section-container">
+      <h2>Contact</h2>
+      <div class="contact-links">
+        <a href="https://linkedin.com/in/anushasubramanian99" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="https://twitter.com/asubramanian99" target="blank"><i class="fab fa-twitter"></i> Twitter</a>
+        <a href="https://github.com/anusha0712" target="blank"><i class="fab fa-github"></i> GitHub</a>
+        <a href="mailto:as7500@columbia.edu" target="blank"><i class="fas fa-envelope"></i> Email</a>
+      </div>
+    </div>
+  </section>
+
 </body>
-</html>
+</html> 
